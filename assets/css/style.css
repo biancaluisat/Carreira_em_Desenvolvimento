@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #fdfdfd;
+    color: #333;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.dark {
+    background-color: #181818;
+    color: #f7f7f7;
+}
+
+.dark header,
+.dark footer {
+    background-color: #2c2c2c;
+}
+
+.dark nav a {
+    color: #ffe0f2;
+}
+
+header {
+    background-color: #f3dbe7;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: #5b3b57;
+}
+
+.logo {
+    width: 70px;
+    transition: transform 0.4s;
+}
+.logo:hover {
+    transform: rotate(8deg) scale(1.1);
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5b3b57;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #9b6582;
+    transform: scale(1.05);
+}
+
+.modo-btn {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #f5b5d5;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.modo-btn:hover {
+    background-color: #f091c3;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner {
+    max-width: 700px;
+    margin: auto;
+    animation: fadeIn 1s ease;
+}
+
+.imagem-banner {
+    width: 85%;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: transform 0.4s;
+}
+
+.imagem-banner:hover {
+    transform: scale(1.03);
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.foto {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s;
+}
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.pergunta {
+    background-color: #fbe7f2;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.pergunta:hover {
+    transform: scale(1.02);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #f5b5d5;
+    outline: none;
+}
+
+button {
+    background-color: #f5b5d5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #f091c3;
+    transform: scale(1.05);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 250px;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.07);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3dbe7;
+    transition: background 0.3s;
+}
+
+a {
+    color: #f091c3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+}
